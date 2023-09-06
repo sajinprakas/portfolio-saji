@@ -15,7 +15,7 @@ html, body {
 }
 
 #loader {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -24,7 +24,7 @@ html, body {
     z-index: 9999;
 }
 #green {
-    /* display: none; */
+    display: none;
     width: 100%;
     top: 100%;
     height: 0vh;
@@ -74,7 +74,7 @@ html, body {
 
 #home {
     width: 100%;
-    height: 200vh;
+    height: 150vh;
     background-color: #FCFAF8;
 }
 
@@ -169,3 +169,80 @@ html, body {
 path, polyline {
     stroke: #14cf93;
 }
+
+#imagery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7vw;
+    margin-top: 20vw;
+}
+
+#imagery #imglef {
+    width: 30%;
+    height: auto;
+}
+
+#imagery #imgrig {
+    width: 30%;
+    height: auto;
+    background-color: red;
+}
+
+#imglef h1{
+    font-size: 2.4vw;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+#imglef h1 span{
+    color: #14cf93;
+    font-family: "Mazius Review 20.09";
+    font-weight: 100;
+    font-style: italic;
+}
+#imgrig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+    background-color: yellow;
+    height: 300px;
+}
+
+ #imgrig .imgcntnr {
+    position: absolute;
+    width: 27vw;
+    height: 40vw;
+    border-radius: 1vw;
+    filter: grayscale();
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#imgrig .imgcntnr:hover {
+    filter: grayscale(0);
+}
+
+
+#imgrig .imgcntnr:nth-child(1) {
+  transform:translate(-40%, -8%) rotate(-20deg);
+  background-image: url('roberto-cortese-F1I4IN86NiE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#imgrig .imgcntnr:nth-child(2) {
+    transform:translate(0%, 0%) rotate(-15deg);
+    background-image: url('ramses-cervantes-hdKPsF_bHdc-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+
+  }
+  #imgrig .imgcntnr:nth-child(3) {
+    transform:translate(20%, 10%) rotate(-5deg);
+    background-image: url('jc-gellidon-ThD1kLGGm6I-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+  }
