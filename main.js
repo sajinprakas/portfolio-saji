@@ -104,6 +104,15 @@ function animateSvg() {
         delay:-.5
     })
 }
+
+function locoInitialize (){
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+}
+
 revealTospan();
 valueSetters();
 loaderAnimation();
+locoInitialize();
