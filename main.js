@@ -110,7 +110,7 @@ function locoInitialize() {
 function cardshow() {
     document.querySelectorAll(".cnt")
     .forEach(function (cnt) {
-        var showingImage;
+        // var showingImage;
       cnt.addEventListener("mousemove", function (dets) {
        document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity=1;
        document.querySelector("#cursor").children[dets.target.dataset.index].style.transform= `translate(${dets.clientX}px, ${dets.clientY}px)`;
