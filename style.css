@@ -302,18 +302,111 @@ path, polyline {
 }
 
 #images {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
     margin-top: 6vw;
     position: relative;
     width: 100%;
     padding: 0 5vw;
 }
 
-#cnt {
+.cnt {
     width: 55%;
     overflow: hidden;
     border-radius: 50px;
 }
 
-#cnt img{
+.cnt img{
     width: 105%;
+}
+
+.cnt1 {
+    width: 55%;
+}
+
+.cnt2 {
+    width: 28%;
+}
+
+#cursor {
+    position: fixed;
+    width: 17vw;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+#cursor>div {
+    opacity: 1;
+    position: absolute;
+}
+
+#elem {
+  width: 100%;
+  position: relative;
+}
+
+#cursor .crow {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+   padding: .7vw;
+}
+
+.crow .ccircle {
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.crow .ccapsule {
+    padding: .7vw 3vw;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+#elem img {
+    width: 100%;
+    opacity: 0;
+    animation: an 4s linear infinite;
+    position: absolute;
+}
+
+#elem img:nth-child(2){
+    animation-delay: 1s;
+}
+
+#elem img:nth-child(3){
+    animation-delay: 2s;
+}
+
+#elem img:nth-child(4){
+    animation-delay: 3s;
+}
+
+#elem img:nth-child(5){
+    animation-delay: 4s;
+}
+
+@keyframes an {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    21% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+
+
 }
